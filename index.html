@@ -1,0 +1,132 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Privacy di Briciola</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap">
+<style>
+/* Layout: a single readable column; a short "in breve" card first, then numbered legal sections. */
+:root{
+  --bg:#faf5f7;--card:#ffffff;--blush:#fbeef3;--raspberry:#b42860;--ink:#33141f;--ink-soft:#7d5868;--line:#f0e1e7;
+  --f-display:ui-rounded,"SF Pro Rounded","Nunito",system-ui,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Nunito Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#140b10;--card:#21131a;--blush:#2c1822;--raspberry:#f27aa8;--ink:#fbecf2;--ink-soft:#c3a1b1;--line:#35202b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#140b10;--card:#21131a;--blush:#2c1822;--raspberry:#f27aa8;--ink:#fbecf2;--ink-soft:#c3a1b1;--line:#35202b;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+main{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px;display:flex;flex-direction:column;gap:28px}
+h1{font:800 40px/1.1 var(--f-display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font:800 21px/1.25 var(--f-display);margin:0 0 8px;text-wrap:balance}
+p,ul{margin:0 0 10px}
+ul{padding-left:20px}
+li{margin-bottom:6px}
+.meta{color:var(--ink-soft);font-size:15px}
+.brief{background:var(--card);border-radius:24px;padding:22px 24px;box-shadow:0 1px 2px rgba(51,20,31,.05),0 8px 24px -14px rgba(180,40,96,.25)}
+.brief h2{color:var(--raspberry)}
+.brief ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;margin:0}
+.brief li{display:flex;gap:12px;align-items:flex-start;margin:0}
+.brief li::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--raspberry);margin-top:9px}
+section{border-top:1px solid var(--line);padding-top:22px}
+section h2 .n{color:var(--raspberry);margin-right:6px}
+.note{background:var(--blush);border-radius:16px;padding:14px 16px;font-size:16px}
+a{color:var(--raspberry)}
+.todo{background:#fff3c4;color:#5a4300;border-radius:6px;padding:0 6px;font-weight:700}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .todo{background:#4a3a00;color:#ffe48a}}
+:root[data-theme="dark"] .todo{background:#4a3a00;color:#ffe48a}
+</style>
+
+<main>
+  <header>
+    <h1>Privacy di Briciola</h1>
+    <p class="meta">App per il ciclo, la pillola e la gravidanza · Versione di prova 0.1 · Ultimo aggiornamento: 24 ottobre 2026</p>
+  </header>
+
+  <div class="brief">
+    <h2>In breve</h2>
+    <ul>
+      <li>Tutto quello che scrivi in Briciola resta sul tuo iPhone. Non abbiamo server e non riceviamo i tuoi dati.</li>
+      <li>Non serve nessun account. Niente pubblicità, niente tracciamento, niente vendita di dati.</li>
+      <li>Le risposte dell'assistente sono calcolate sul telefono con Apple Intelligence.</li>
+      <li>Se lo scegli, Briciola legge da Salute di Apple giorni di ciclo, sintomi e minuti di allenamento. Non scrive nulla in Salute e quei dati restano sul telefono.</li>
+      <li>Il resoconto per il medico esce dal telefono solo se sei tu a condividerlo.</li>
+      <li>Se qualcosa non funziona puoi mandarci una segnalazione tecnica: parte solo se la invii tu e non contiene i tuoi dati sulla salute.</li>
+      <li>Puoi cancellare tutto in qualsiasi momento da Impostazioni › Cancella tutti i dati.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2><span class="n">1</span>Chi è responsabile</h2>
+    <p>Briciola è sviluppata da Riccardo Pozzilli. Per qualsiasi domanda sulla privacy puoi scrivere a <a href="mailto:pozzilliriccardo@gmail.com">pozzilliriccardo@gmail.com</a>.</p>
+    <p>Visto che i dati che inserisci nell'app non ci arrivano mai, per quei dati non siamo titolari del trattamento: restano sotto il tuo controllo, sul tuo dispositivo. Siamo invece responsabili dei pochi dati descritti al punto 7, legati alla fase di prova.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>Quali dati inserisci e dove restano</h2>
+    <p>Nell'app puoi segnare: date e intensità del ciclo, sanguinamenti, perdite, sintomi, rapporti, farmaci, la pillola che usi e quando la prendi, i dati della gravidanza (date, pressione, peso, movimenti del bambino, contrazioni), le note personali e i messaggi della chat.</p>
+    <p>Sono dati sulla salute e sulla vita sessuale, cioè dati particolarmente delicati (articolo 9 del Regolamento europeo GDPR). Per questo Briciola li tiene solo in un file all'interno dell'app, sul tuo iPhone, protetto dalla cifratura di iOS: è leggibile solo quando il telefono è stato sbloccato con il tuo codice.</p>
+    <p class="note">Se usi il backup di iCloud o del computer, il backup del telefono comprende anche i dati di Briciola. Quel backup è gestito da Apple secondo le sue regole sulla privacy, e puoi disattivarlo dalle Impostazioni dell'iPhone.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>L'assistente Briciola</h2>
+    <p><strong>Salute di Apple.</strong> Solo se tocchi «Importa da Salute» e dai il permesso, Briciola legge da Salute i giorni di ciclo, lo spotting, alcuni sintomi (crampi, mal di testa, gonfiore, seno dolente, acne, umore, stanchezza, nausea) e i minuti di allenamento settimanali. Li usa sul telefono per completare il calendario, i consigli e il resoconto. Non scrive nulla in Salute, non li invia a noi né a terzi e non li usa per pubblicità. Puoi revocare il permesso in Impostazioni › Salute › Accesso ai dati.</p>
+    <p>Sugli iPhone che supportano Apple Intelligence (iOS 26 o successivo), le risposte della chat e la sintesi delle note sono generate dal modello di Apple che funziona direttamente sul telefono. Le tue domande e i tuoi dati non vengono inviati né a noi né a server esterni per ottenere la risposta.</p>
+    <p>Sugli altri iPhone l'app usa risposte già scritte, contenute nell'app.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>Sveglie e notifiche</h2>
+    <p>Le sveglie per la pillola sono programmate dal sistema dell'iPhone. Il testo che compare è «È l'ora della pillola». Se non vuoi che si legga sulla schermata di blocco, puoi nascondere le anteprime da Impostazioni › Notifiche.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>Il resoconto per il medico</h2>
+    <p>Puoi creare un resoconto dei dati di un periodo e condividerlo, per esempio con il tuo ginecologo. Il resoconto lascia il telefono solo quando scegli tu come mandarlo (messaggio, email, stampa, ecc.). Da quel momento la copia inviata è gestita dall'app o dalla persona che hai scelto. I rapporti sessuali compaiono nel resoconto solo se attivi l'opzione apposita.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>Cosa non facciamo</h2>
+    <ul>
+      <li>Non raccogliamo, non conserviamo e non leggiamo i dati che inserisci.</li>
+      <li>Non usiamo pubblicità, strumenti di analisi o tracciamento tra app e siti.</li>
+      <li>Non vendiamo né cediamo dati a nessuno, comprese assicurazioni e datori di lavoro.</li>
+      <li>Non ti chiediamo di creare un account.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span>Durante la prova con TestFlight</h2>
+    <p>La versione di prova è distribuita con TestFlight, il servizio di Apple. Quando partecipi al test, Apple ci mette a disposizione:</p>
+    <ul>
+      <li>il nome e l'indirizzo email con cui ti sei iscritta al test, se ti abbiamo invitata via email;</li>
+      <li>i rapporti sui blocchi dell'app e alcune informazioni tecniche sul dispositivo (modello, versione di iOS);</li>
+      <li>i commenti e gli screenshot che scegli di inviarci tramite TestFlight.</li>
+    </ul>
+    <p>Inoltre, sul telefono l'app tiene un <b>registro tecnico</b> degli errori (per esempio una sveglia che non è stata programmata) e conserva i rapporti di blocco che iOS le consegna. Il registro non contiene date del ciclo, sintomi, note o messaggi della chat. Resta sul telefono finché non scegli di inviarcelo da Impostazioni › Segnala un problema: prima dell'invio puoi leggerne il contenuto, escluderlo o svuotarlo.</p>
+    <p>Usiamo queste informazioni solo per correggere errori e migliorare l'app, sulla base del tuo consenso a partecipare al test. Prima di inviare uno screenshot controlla che non mostri dati che non vuoi condividere. Conserviamo i commenti per la durata della fase di prova e al massimo 12 mesi. La raccolta da parte di Apple segue la <a href="https://www.apple.com/it/legal/privacy/" rel="noopener">privacy policy di Apple</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">8</span>Cancellare i dati</h2>
+    <p>In Briciola: Impostazioni › Cancella tutti i dati. Puoi anche eliminare l'app: insieme all'app vengono eliminati i suoi dati sul telefono. Per i commenti inviati durante la prova, scrivici e li cancelliamo.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">9</span>I tuoi diritti</h2>
+    <p>Per i dati del punto 7 puoi chiederci in ogni momento di vederli, correggerli, cancellarli, limitarne l'uso o opporti, e puoi ritirare il consenso uscendo dal test (articoli 15–22 GDPR). Se ritieni che i tuoi dati siano trattati in modo scorretto puoi rivolgerti al <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">10</span>Ragazze minorenni</h2>
+    <p>Briciola può essere usata anche da ragazze minorenni, perché non raccoglie dati. Per partecipare al test con TestFlight sotto i 14 anni serve il consenso di un genitore. Per dubbi su contraccezione e salute intima, i consultori familiari offrono ascolto gratuito anche alle minorenni.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">11</span>Briciola non è un medico</h2>
+    <p>Le informazioni dell'app servono a orientarti e a parlare meglio con il medico. Non sono una diagnosi e il calendario non è un metodo contraccettivo. In caso di emergenza chiama il 112.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">12</span>Modifiche</h2>
+    <p>Se cambiamo il modo in cui l'app tratta i dati, aggiorniamo questa pagina e la data in alto, e lo segnaliamo nell'app prima che la modifica abbia effetto.</p>
+  </section>
+</main>
